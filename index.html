@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Visualizer</title>
+	<style type="text/css">
+		html, body {
+			margin: 0px;
+			overflow: hidden;
+			height: 100%;
+		}
+		canvas {
+			height: 100%;
+			width: 100%;
+		}
+		#vid {
+			margin-left: auto;
+			margin-right: auto;
+			position: fixed;
+			display: block;
+		}
+
+		#v {
+			left: 50%;
+    		position: absolute;
+    		top: 50%;
+    		transform: translate(-50%, -50%);
+		}
+		#v2 {
+			left: 50%;
+    		position: absolute;
+    		top: 50%;
+    		transform: translate(-50%, -50%);
+		}
+		
+	</style>
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body onload="doLoad()">
+	<!--<label id="test" style="position: absolute;">test</label>-->
+	<div id="vid" style="text-align: center; position: absolute; top: 0%; bottom: 50%; width: 100%; height: 100%;" >
+		<video id="v2" class="apply-shake"  autoplay loop align="center">
+        	<source src="dxl _Glow.webm" type='video/webm; codecs="vp8, vorbis"'/>
+    	</video>
+    	<video id="v" class="apply-shake"  autoplay loop align="center">
+        	<source src="dxl5.1.webm" type='video/webm; codecs="vp8, vorbis"'/>
+    	</video>
+    </div>
+	<canvas id ="canvas"></canvas>
+	<script type="text/javascript" src = "main.js"></script>
+</body>
+</html>
